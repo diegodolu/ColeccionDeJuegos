@@ -14,6 +14,7 @@
 		FEDEABB42CADF0040044274D /* ColeccionDeJuegos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FEDEABB22CADF0040044274D /* ColeccionDeJuegos.xcdatamodeld */; };
 		FEDEABB62CADF0050044274D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEDEABB52CADF0050044274D /* Assets.xcassets */; };
 		FEDEABB92CADF0050044274D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEDEABB72CADF0050044274D /* LaunchScreen.storyboard */; };
+		FEDEABC12CADFCFC0044274D /* JuegosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEABC02CADFCFC0044274D /* JuegosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FEDEABB52CADF0050044274D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEDEABB82CADF0050044274D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEDEABBA2CADF0050044274D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEDEABC02CADFCFC0044274D /* JuegosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuegosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				FEDEABAB2CADF0040044274D /* SceneDelegate.swift */,
 				FEDEABAD2CADF0040044274D /* ViewController.swift */,
 				FEDEABAF2CADF0040044274D /* Main.storyboard */,
+				FEDEABC02CADFCFC0044274D /* JuegosViewController.swift */,
 				FEDEABB52CADF0050044274D /* Assets.xcassets */,
 				FEDEABB72CADF0050044274D /* LaunchScreen.storyboard */,
 				FEDEABBA2CADF0050044274D /* Info.plist */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEDEABC12CADFCFC0044274D /* JuegosViewController.swift in Sources */,
 				FEDEABAE2CADF0040044274D /* ViewController.swift in Sources */,
 				FEDEABAA2CADF0040044274D /* AppDelegate.swift in Sources */,
 				FEDEABAC2CADF0040044274D /* SceneDelegate.swift in Sources */,
