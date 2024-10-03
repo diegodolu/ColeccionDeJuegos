@@ -33,7 +33,7 @@
                     <navigationItem key="navigationItem" id="Vft-4F-23w">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="fbA-fn-kJj">
                             <connections>
-                                <segue destination="nu7-f1-SqL" kind="show" id="QuU-7v-u1M"/>
+                                <segue destination="nu7-f1-SqL" kind="show" identifier="juegoSegue" id="QuU-7v-u1M"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -66,24 +66,42 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNo-Wx-GrD">
-                                <rect key="frame" x="169.5" y="344" width="75.5" height="31"/>
+                                <rect key="frame" x="140" y="607" width="134" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Agregar"/>
                                 <connections>
                                     <action selector="agregarTapped:" destination="nu7-f1-SqL" eventType="touchUpInside" id="zXL-vP-2fa"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKg-29-gz3">
+                                <rect key="frame" x="140" y="658" width="134" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Eliminar"/>
+                                <connections>
+                                    <action selector="eliminarTapped:" destination="nu7-f1-SqL" eventType="touchUpInside" id="WTW-jU-1c8"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KKL-1W-ycC">
+                                <rect key="frame" x="47" y="346" width="320" height="216"/>
+                            </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kww-g2-2jW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="dNo-Wx-GrD" firstAttribute="centerX" secondItem="KKg-29-gz3" secondAttribute="centerX" id="0Zq-ob-Jtn"/>
                             <constraint firstItem="z8i-aU-Orq" firstAttribute="width" secondItem="ybI-u2-teX" secondAttribute="width" id="BtA-1j-NpX"/>
-                            <constraint firstItem="dNo-Wx-GrD" firstAttribute="top" secondItem="ybI-u2-teX" secondAttribute="bottom" constant="20" id="LXz-QN-G01"/>
-                            <constraint firstItem="ybI-u2-teX" firstAttribute="centerX" secondItem="dNo-Wx-GrD" secondAttribute="centerX" id="N8y-DW-A1G"/>
+                            <constraint firstItem="dNo-Wx-GrD" firstAttribute="top" secondItem="KKL-1W-ycC" secondAttribute="bottom" constant="45" id="GgF-RD-vD3"/>
+                            <constraint firstItem="KKg-29-gz3" firstAttribute="top" secondItem="dNo-Wx-GrD" secondAttribute="bottom" constant="20" id="LXF-Y5-eAB"/>
                             <constraint firstItem="z8i-aU-Orq" firstAttribute="top" secondItem="kww-g2-2jW" secondAttribute="top" constant="32" id="QSO-vq-T1h"/>
+                            <constraint firstItem="kww-g2-2jW" firstAttribute="trailing" secondItem="dNo-Wx-GrD" secondAttribute="trailing" constant="140" id="dOw-vL-Xqq"/>
+                            <constraint firstItem="KKL-1W-ycC" firstAttribute="centerX" secondItem="46u-ck-yyn" secondAttribute="centerX" id="fa4-zR-oor"/>
+                            <constraint firstItem="KKg-29-gz3" firstAttribute="leading" secondItem="kww-g2-2jW" secondAttribute="leading" constant="140" id="gbR-Nb-Xqa"/>
+                            <constraint firstItem="KKL-1W-ycC" firstAttribute="top" secondItem="ybI-u2-teX" secondAttribute="bottom" constant="22" id="j6N-xN-Xdz"/>
                             <constraint firstItem="ybI-u2-teX" firstAttribute="top" secondItem="z8i-aU-Orq" secondAttribute="bottom" constant="20" id="kgD-cy-ATC"/>
+                            <constraint firstItem="dNo-Wx-GrD" firstAttribute="leading" secondItem="kww-g2-2jW" secondAttribute="leading" constant="140" id="m1P-w6-28O"/>
                             <constraint firstItem="z8i-aU-Orq" firstAttribute="centerX" secondItem="kww-g2-2jW" secondAttribute="centerX" id="na5-Cd-mmp"/>
                             <constraint firstItem="z8i-aU-Orq" firstAttribute="centerX" secondItem="ybI-u2-teX" secondAttribute="centerX" id="x5U-rv-4nh"/>
+                            <constraint firstItem="kww-g2-2jW" firstAttribute="trailing" secondItem="KKg-29-gz3" secondAttribute="trailing" constant="140" id="zXq-gM-NvU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EyW-Lg-gza">
@@ -102,6 +120,9 @@
                     </navigationItem>
                     <connections>
                         <outlet property="ImageView" destination="z8i-aU-Orq" id="MZy-xW-xtg"/>
+                        <outlet property="agregarActualizarBoton" destination="dNo-Wx-GrD" id="VZf-Vo-3nw"/>
+                        <outlet property="eliminarBoton" destination="KKg-29-gz3" id="zqk-56-1A0"/>
+                        <outlet property="pickerView" destination="KKL-1W-ycC" id="D33-Me-Mcz"/>
                         <outlet property="tituloTexField" destination="ybI-u2-teX" id="MPK-k4-hnJ"/>
                     </connections>
                 </viewController>
